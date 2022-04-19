@@ -813,6 +813,11 @@ ol.num-list li p {
   background-color: transparent;
   border-color: #0135A5!important;
 }
+.btn-k:hover{
+  color: #fff !important;
+  border-color:#fff ;
+  background-color: transparent;
+}
 
 /*------------------------------------------*/
 /*  Transparent Button
@@ -831,7 +836,7 @@ ol.num-list li p {
 .btn-tra-white {
   color: #fff;
   background-color: transparent;
-  border-color: #fff;
+  background-color: #0135A5;
 }
 
 .scroll .btn-tra-white {
@@ -6285,7 +6290,10 @@ nav a#pull {
     box-shadow: 0 0 0 0 rgba(0, 50, 160, 0.35);
     animation: ripple 3s infinite;
 }
-
+.desktoplogo img{
+  width: 300px;
+  height: auto;
+}
 /* CTAs pluging */
 
 /* CTA */
