@@ -6128,7 +6128,7 @@ footer .col-md-7{
   height: 50px;
   position: fixed;
   bottom: 35px;
-  right: 25px;
+  left: 25px;
   z-index: 99;
   -webkit-border-radius: 100%;
   -moz-border-radius: 100%;
