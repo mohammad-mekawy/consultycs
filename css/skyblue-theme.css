@@ -31,13 +31,21 @@ html {
   src: url(../fonts/used/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf);
 }
 @font-face {
-  font-family: "Tw Cen Mt Bold";
-  src: url(../fonts/used/TCB_____.TTF);
+  font-family: "Tw Cen Mt R";
+  src: url(../fonts/used/TCR);
+}
+@font-face {
+  font-family: "Tw Cen Mt B";
+  src: url(../fonts/used/TCR);
 }
 body {
-  font-family: 'Tw Cen Mt Bold', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: 'Tw Cen Mt R', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   color: #283034;
   font-weight: 300;
+}
+strong{
+  font-family: 'Tw Cen Mt B', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
 }
 
 /*------------------------------------------------------------------*/
@@ -6312,6 +6320,9 @@ nav a#pull {
   .mob-black-color{
     color: #000 !important;
   }
+}
+.footer-logo{
+  width: 70%;
 }
 /* CTAs pluging */
 
