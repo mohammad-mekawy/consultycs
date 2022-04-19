@@ -24,6 +24,7 @@
 html {
   -webkit-font-smoothing: antialiased;
   font-size: 16px;
+  scroll-behavior: smooth;
 } 
 @font-face {
   font-family: "Made Tommy";
@@ -6285,6 +6286,9 @@ nav a#pull {
 
 
 /* kiko style */
+.brand-color{
+  color: #0135A5;
+}
 @keyframes ripple{50%{box-shadow:0 0 0 40px rgba(244,68,56,0)}to{box-shadow:0 0 0 0 rgba(244,68,56,0)}}
 .k-ripple {
     box-shadow: 0 0 0 0 rgba(0, 50, 160, 0.35);
@@ -6296,6 +6300,10 @@ nav a#pull {
 }
 .mob-logo{
   width: 180px;
+}
+
+.statistic-ico img{
+  width: 100%;
 }
 /* CTAs pluging */
 
