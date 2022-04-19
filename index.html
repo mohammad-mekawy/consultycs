@@ -678,9 +678,11 @@
                 </h3>
 
                 <!-- Button -->
-                <a href="#" class="btn btn-md btn-primary tra-white-hover"
-                  >Request an Appointment
-                </a>
+                <button
+                  class="btn btn-md btn-primary tra-white-hover btn-call-widget"
+                >
+                  Request an Appointment
+                </button>
 
                 <!-- Small Text -->
                 <p class="p-sm mt-15">Limited Time Offer</p>
@@ -851,7 +853,7 @@
     <!-- call-float -->
     <div class="call-float-div call-close">
       <div class="inner-call-float">
-        <a class="btn-call-float">
+        <a class="btn-call-float btn-call-widget">
           <i class="fa fa-phone m-r-5"></i><span class="hidden-xs">Call</span>
         </a>
         <div class="info-call">
@@ -1141,7 +1143,7 @@
           $(".quote-popup").fadeOut();
           $(".call-overlay").delay(500).fadeOut();
         });
-        $(".btn-call-float").click(function () {
+        $(".btn-call-widget").click(function () {
           $(".call-overlay").fadeIn();
           $(".call-back-popup").delay(500).fadeIn();
         });
