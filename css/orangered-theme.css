@@ -324,7 +324,7 @@ body {
 .bg-deepblue { background-color: #184772; }
 .bg-darkblue { background-color: #112030; }
 .bg-royalblue { background-color: #37517e; }
-.bg-skyblue { background-color: #319ed7; }
+.bg-skyblue { background-color: #0135A5; }
 .bg-stateblue { background-color: #5256d0; }
 .bg-steelblue { background-color: #4682b4; }
 .bg-green { background-color: #05a63f; }
@@ -641,7 +641,7 @@ ol.num-list li p {
 .skyblue-list .list-box i,
 .option-list.skyblue-list::after,
 .option-list.skyblue-list::before {
-  background-color: #319ed7;
+  background-color: #0135A5;
 }
 
 .green-list .list-box i,
@@ -897,9 +897,9 @@ ol.num-list li p {
 .tra-skyblue-hover:hover, 
 .scroll .tra-skyblue-hover:hover, 
 .white-color .tra-skyblue-hover:hover {
-  color: #319ed7!important;
+  color: #0135A5!important;
   background-color: transparent;
-  border-color: #319ed7!important;
+  border-color: #0135A5!important;
 }
 
 .btn-tra-green, 
@@ -1058,8 +1058,8 @@ ol.num-list li p {
 .scroll .skyblue-hover:hover, 
 .white-color .skyblue-hover:hover {
   color: #fff!important;
-  background-color: #319ed7;
-  border-color: #319ed7!important;
+  background-color: #0135A5;
+  border-color: #0135A5!important;
 }
 
 .btn-green, 
@@ -1615,7 +1615,7 @@ span.os-version {
 .skyblue-color li, 
 .skyblue-color i, 
 .white-color .skyblue-color,
-.skyblue-color span { color: #319ed7; }
+.skyblue-color span { color: #0135A5; }
 
 .green-color,
 .green-color h2, 
@@ -1862,7 +1862,7 @@ span.os-version {
   border-radius: 50%;
   top: 0;
   left: 0;
-  background: #319ed7;
+  background: #0135A5;
 }
 
 .cssload-ball-1 {
@@ -4899,7 +4899,7 @@ p.purchase-link a {
 
 .skyblue-arrow .accordion-item .accordion-thumb:after, 
 .skyblue-arrow .accordion-item.is-active .accordion-thumb:after {
-  color: #319ed7; 
+  color: #0135A5; 
 }
 
 .stateblue-arrow .accordion-item .accordion-thumb:after, 
