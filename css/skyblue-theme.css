@@ -6305,6 +6305,14 @@ nav a#pull {
 .statistic-ico img{
   width: 100%;
 }
+@media (max-width:992px) {
+  .mob-brand-color{
+    color: #0135A5 !important;
+  }
+  .mob-black-color{
+    color: #000 !important;
+  }
+}
 /* CTAs pluging */
 
 /* CTA */
