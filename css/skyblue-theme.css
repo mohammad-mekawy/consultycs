@@ -6334,6 +6334,10 @@ nav a#pull {
 .Appointment form{
   box-shadow: none !important;
 }
+.P-resize{
+  width: 80%;
+  padding-top: 10%;
+}
 /* CTAs pluging */
 
 /* CTA */
