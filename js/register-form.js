@@ -3,7 +3,7 @@ $(document).ready(function() {
 
     "use strict";
     
-    $(".ajax-form").submit(function(e) {
+    $(".register-form").submit(function(e) {
         e.preventDefault();
         var name = $(".name");
         var email = $(".email");
