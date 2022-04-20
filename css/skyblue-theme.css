@@ -6335,7 +6335,7 @@ nav a#pull {
   box-shadow: none !important;
 }
 .P-resize{
-  width: 80%;
+  width: 80% !important;
   padding-top: 10%;
 }
 /* CTAs pluging */
