@@ -738,7 +738,7 @@
               </div>
             </div>
             <div class="col-md-7">
-              <form action="form.php" method="post">
+              <form name="registerform" class="ajax-form">
                 <div class="row">
                   <div class="col-md-6">
                     <input
@@ -770,10 +770,14 @@
                     />
                   </div>
                   <div class="col-md-6">
-                    <button type="submit" class="btn btn-block" name="footer">
+                    <button type="submit" class="btn btn-block submit">
                       Enquire Now
                     </button>
                   </div>
+                </div>
+                <!-- Form Message -->
+                <div class="hero-form-msg text-center">
+                  <span class="loading"></span>
                 </div>
               </form>
               <nav class="mobile-canvas__nav navigation">
@@ -1084,7 +1088,7 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/contact-form.js"></script>
-    <!-- <script src="js/register-form.js"></script> -->
+    <script src="js/register-form.js"></script>
     <script src="js/request-form.js"></script>
     <script src="js/comment-form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
