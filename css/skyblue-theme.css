@@ -75,7 +75,7 @@ strong{
 .wide-60 { padding-top: 100px; padding-bottom: 60px; }
 .wide-50 { padding-top: 100px; padding-bottom: 50px; }
 .wide-40 { padding-top: 100px; padding-bottom: 40px; }
-.wide-30 { padding-top: 100px; padding-bottom: 30px; }
+.wide-30 { padding-top: 60px; padding-bottom: 30px; }
 .wide-20 { padding-top: 100px; padding-bottom: 20px; }
 
 /*------------------------------------------*/
@@ -2518,7 +2518,7 @@ span.os-version {
 }
 
 .navbar-light .wsmenu > .wsmenu-list > li > a {
-  color: #fff;
+  color: #000;
 }
 
 .wsmenu > .wsmenu-list > li > a.last-link {
@@ -2904,8 +2904,8 @@ h5.wsmwnutitle a:hover {
 
 #hero-4 {  
   background-image: url(../images/used/hero-banner.jpg);
-  padding-top: 170px;
-  padding-bottom: 110px;  
+  padding-top: 115px;
+  padding-bottom: 35px;  
   position: relative;
   z-index: 3;
 }
@@ -3328,7 +3328,7 @@ p.hero-info {
 .hero-form form { 
   background: #fff;
   border: 1px solid #fafafa;
-  padding: 45px 25px 35px;
+  padding: 25px;
   -webkit-border-radius: 6px;
   -moz-border-radius: 6px;
   border-radius: 6px;
@@ -6320,6 +6320,9 @@ nav a#pull {
   .mob-black-color{
     color: #000 !important;
   }
+  .statistic-ico img{
+    width: 45%;
+  }
 }
 .footer-logo{
   width: 70%;
@@ -6409,7 +6412,7 @@ color: #fff;
 .call-float-div {
   position: fixed;
   right: 0px;
-  top: 250px;
+  top: 330px;
   -webkit-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   z-index: 10;
