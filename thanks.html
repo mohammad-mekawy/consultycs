@@ -20,7 +20,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- SITE TITLE -->
-    <title>Consultycs DMCC &#8211; Thank you</title>
+    <title>Consultycs DMCC &#8211; Solutions for success</title>
 
     <!-- FAVICON AND TOUCH ICONS -->
     <link
@@ -43,38 +43,20 @@
     <link rel="apple-touch-icon" href="images/used/favicon.png" />
     <link rel="icon" href="images/used/favicon.png" type="image/x-icon" />
 
-    <!-- GOOGLE FONTS -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,400,500,700,900"
-      rel="stylesheet"
-    />
-
     <!-- BOOTSTRAP CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- FONT ICONS -->
-    <link
-      href="https://use.fontawesome.com/releases/v5.11.0/css/all.css"
-      rel="stylesheet"
-      crossorigin="anonymous"
-    />
-    <link href="css/flaticon.css" rel="stylesheet" />
-
     <!-- PLUGINS STYLESHEET -->
     <link href="css/menu.css" rel="stylesheet" />
-    <link
+    <!-- <link
       id="effect"
       href="css/dropdown-effects/fade-down.css"
       media="all"
       rel="stylesheet"
     />
-    <link href="css/magnific-popup.css" rel="stylesheet" />
-    <link href="css/owl.carousel.min.css" rel="stylesheet" />
-    <link href="css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="css/magnific-popup.css" rel="stylesheet" /> -->
+    <!-- <link href="css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="css/owl.theme.default.min.css" rel="stylesheet" /> -->
 
     <!-- ON SCROLL ANIMATION -->
     <link href="css/animate.css" rel="stylesheet" />
@@ -93,19 +75,20 @@
 
     <!-- RESPONSIVE CSS -->
     <link href="css/responsive.css" rel="stylesheet" />
-    <style>
-      .hero-section{
-        min-height: 100vh;
-        text-align: center;
-      }
-    </style>
-      <!-- Google Tag Manager --> 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-  })(window,document,'script','dataLayer','GTM-WWHML8L');</script>
-  <!-- End Google Tag Manager --> 
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-WWHML8L");
+    </script>
+    <!-- End Google Tag Manager -->
   </head>
 
   <body>
@@ -274,7 +257,7 @@
       <a class="call-icon" href="tel:++971 4 584 0919" target="_blank">
         <img src="images/used/phone.png" alt="call" />
       </a>
-      <a class="whats-icon" href="#" target="_blank">
+      <a class="whats-icon" href="https://api.whatsapp.com/send?phone=971588409371&text=Hi,%20I%20want%20to%20enquire%20more%20about%20Business%20Setup%20in%20the%20UAE" target="_blank">
         <img src="images/used/whats.png" alt="call" />
       </a>
     </div>
@@ -540,14 +523,14 @@
     <script src="js/jquery.appear.js"></script>
     <script src="js/jquery.scrollto.js"></script>
     <script src="js/menu.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/contact-form.js"></script>
+    <script src="js/contact-form.js"></script> -->
     <!-- <script src="js/register-form.js"></script> -->
-    <script src="js/request-form.js"></script>
+    <!-- <script src="js/request-form.js"></script>
     <script src="js/comment-form.js"></script>
     <script src="js/jquery.validate.min.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script> -->
     <script src="js/wow.js"></script>
 
     <!-- Custom Script -->
@@ -572,16 +555,20 @@
           $(".quote-popup").fadeOut();
           $(".call-overlay").delay(500).fadeOut();
         });
-        $(".btn-call-float").click(function () {
+        $(".btn-call-widget").click(function () {
           $(".call-overlay").fadeIn();
           $(".call-back-popup").delay(500).fadeIn();
         });
+        $(".btn-call-form").click(function () {
+          $(".call-overlay").fadeIn();
+          $(".Appointment").delay(500).fadeIn();
+        });
         $(".cls_btn").click(function () {
-          $(".call-back-popup").fadeOut();
+          $(".call-back-popup,.Appointment").fadeOut();
           $(".call-overlay").delay(500).fadeOut();
         });
         $(".call-overlay").click(function () {
-          $(".call-back-popup").fadeOut();
+          $(".call-back-popup,.Appointment").fadeOut();
           $(".call-overlay").delay(500).fadeOut();
         });
         $(".tabs-menu a").click(function (e) {

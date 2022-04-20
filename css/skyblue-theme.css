@@ -2520,6 +2520,9 @@ span.os-version {
 .navbar-light .wsmenu > .wsmenu-list > li > a {
   color: #000;
 }
+.navbar-light .wsmenu > .wsmenu-list > li > a:hover {
+  color: #0135a5;
+}
 
 .wsmenu > .wsmenu-list > li > a.last-link {
   padding: 10px 0px;
