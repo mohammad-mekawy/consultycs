@@ -2519,6 +2519,7 @@ span.os-version {
 
 .navbar-light .wsmenu > .wsmenu-list > li > a {
   color: #000;
+  transition: all 500ms;
 }
 .navbar-light .wsmenu > .wsmenu-list > li > a:hover {
   color: #0135a5;
