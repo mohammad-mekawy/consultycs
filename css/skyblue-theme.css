@@ -6325,7 +6325,10 @@ nav a#pull {
   }
 }
 .footer-logo{
-  width: 70%;
+  width: 45%;
+}
+.Appointment form{
+  box-shadow: none !important;
 }
 /* CTAs pluging */
 
@@ -6386,6 +6389,12 @@ color: #fff;
 .quote-popup{width:30vw;background:#fff;top:25%;bottom:auto;left:0;right:0;position:fixed;margin:0 auto;z-index:9999;padding:25px 20px;border-radius:10px;box-shadow:0 0 30px -21px #0135A5;display:none}
 @media(max-width:786px) {
   .quote-popup{
+    width: 90%;
+  }
+}
+.Appointment{width:30vw;background:#fff;top:25%;bottom:auto;left:0;right:0;position:fixed;margin:0 auto;z-index:9999;padding:25px 20px;border-radius:10px;box-shadow:0 0 30px -21px #0135A5;display:none}
+@media(max-width:786px) {
+  .Appointment{
     width: 90%;
   }
 }

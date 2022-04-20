@@ -648,7 +648,7 @@
 
                 <!-- Button -->
                 <button
-                  class="btn btn-md btn-primary tra-white-hover btn-call-widget"
+                  class="btn btn-md btn-primary tra-white-hover btn-call-form"
                 >
                   Request an Appointment
                 </button>
@@ -1069,6 +1069,71 @@
         </form>
       </div>
     </div>
+    <!-- quote popup -->
+    <div class="Appointment text-center hero-form">
+      <span class="cls_btn">X</span>
+      <div class="info-call">
+        <div>
+          <h3 class="call-heading">Request an Appointment</h3>
+        </div>
+        <form action="form.php" class="row register-form" method="post">
+          <!-- Form Input -->
+          <div class="col-md-12">
+            <input
+              class="form-control name"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+            />
+          </div>
+
+          <!-- Form Input -->
+          <div class="col-md-12">
+            <input
+              class="form-control email"
+              type="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+
+          <!-- Form Input -->
+          <div class="col-md-12">
+            <input
+              class="form-control phone"
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+            />
+          </div>
+          <!-- Form Input -->
+          <div class="col-md-12">
+            <input
+              class="form-control phone"
+              type="text"
+              name="message"
+              placeholder="Message"
+            />
+          </div>
+
+          <!-- Form Submit Button -->
+          <div class="col-md-12">
+            <button
+              type="submit"
+              name="hero"
+              class="btn btn-md btn-primary tra-primary-hover submit"
+            >
+              Submit
+            </button>
+          </div>
+
+          <!-- Form Message -->
+          <div class="hero-form-msg text-center">
+            <span class="loading"></span>
+          </div>
+        </form>
+      </div>
+    </div>
     <span class="call-overlay"></span>
     <!-- CTAs widgets end -->
 
@@ -1117,12 +1182,16 @@
           $(".call-overlay").fadeIn();
           $(".call-back-popup").delay(500).fadeIn();
         });
+        $(".btn-call-form").click(function () {
+          $(".call-overlay").fadeIn();
+          $(".Appointment").delay(500).fadeIn();
+        });
         $(".cls_btn").click(function () {
-          $(".call-back-popup").fadeOut();
+          $(".call-back-popup,.Appointment").fadeOut();
           $(".call-overlay").delay(500).fadeOut();
         });
         $(".call-overlay").click(function () {
-          $(".call-back-popup").fadeOut();
+          $(".call-back-popup,.Appointment").fadeOut();
           $(".call-overlay").delay(500).fadeOut();
         });
         $(".tabs-menu a").click(function (e) {
