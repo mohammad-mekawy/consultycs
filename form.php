@@ -66,60 +66,60 @@ if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['hero'])){
 			}
     }
 }
-// if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['footer'])){
-//     $name  = filter_var($_POST['name'],FILTER_SANITIZE_STRING);
-//     $email = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
-//     $phone = filter_var($_POST['phone'],FILTER_SANITIZE_NUMBER_INT);
+if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['footer'])){
+    $name  = filter_var($_POST['name'],FILTER_SANITIZE_STRING);
+    $email = filter_var($_POST['email'],FILTER_SANITIZE_EMAIL);
+    $phone = filter_var($_POST['phone'],FILTER_SANITIZE_NUMBER_INT);
 
-//     $formErrors = array();
+    $formErrors = array();
 	
-//     if(empty($name)){
-//         $formErrors[] = "Add You name please";
-//     }elseif(empty($phone)){
-//         $formErrors[] = "Add You phone please";
-//     }elseif(empty($email)){
-//         $formErrors[] = "Add You email please";
-//     }
-//     if(empty($formErrors)){
-//             $emails = array("info@consultycs.com", "sonika@consultycs.com", "gmarwadi@consultycs.com", "trishna@happenize.com", "desiree@happenize.com");
+    if(empty($name)){
+        $formErrors[] = "Add You name please";
+    }elseif(empty($phone)){
+        $formErrors[] = "Add You phone please";
+    }elseif(empty($email)){
+        $formErrors[] = "Add You email please";
+    }
+    if(empty($formErrors)){
+            $emails = array("info@consultycs.com", "sonika@consultycs.com", "gmarwadi@consultycs.com", "trishna@happenize.com", "desiree@happenize.com");
 			
-// 			for($i=0;$i<count($emails);$i++){
-// 				$mail = new PHPMailer;
-// 				$mail->CharSet = 'UTF-8';
-// 				$mail->SMTPDebug = 0;  
-// 				$mail->isSMTP();                            // Set mailer to use SMTP
-// 				$mail->Host = 'happenize.net';             // Specify main and backup SMTP servers
-// 				$mail->SMTPAuth = true;                     // Enable SMTP authentication
-// 				$mail->Username = 'consultycs@happenize.net';          // SMTP username
-// 				$mail->Password = '%E0gaSZL3&g2'; // SMTP password
-// 				$mail->SMTPSecure = 'ssl';                            
-// 				$mail->Port = 465;  
-// 				$mail->isHTML(true);  // Set email format to HTML
+			for($i=0;$i<count($emails);$i++){
+				$mail = new PHPMailer;
+				$mail->CharSet = 'UTF-8';
+				$mail->SMTPDebug = 0;  
+				$mail->isSMTP();                            // Set mailer to use SMTP
+				$mail->Host = 'happenize.net';             // Specify main and backup SMTP servers
+				$mail->SMTPAuth = true;                     // Enable SMTP authentication
+				$mail->Username = 'consultycs@happenize.net';          // SMTP username
+				$mail->Password = '%E0gaSZL3&g2'; // SMTP password
+				$mail->SMTPSecure = 'ssl';                            
+				$mail->Port = 465;  
+				$mail->isHTML(true);  // Set email format to HTML
 
-// 				$mail->setFrom('consultycs@happenize.net');
-// 				$mail->addAddress($emails[$i]); 
+				$mail->setFrom('consultycs@happenize.net');
+				$mail->addAddress($emails[$i]); 
 
-// 				//$mail->isHTML(true);  // Set email format to HTML
+				//$mail->isHTML(true);  // Set email format to HTML
 
-//                $bodyContent = '<h3 style="font-size:18px; margin-bottom:12px;">Name: '. $name .'</h3><br>';
-//                $bodyContent .= '<h3 style="font-size:18px; margin-bottom:12px;">Email: '. $email .'</h3><br>';
-//                $bodyContent .= '<h3 style="font-size:18px; margin-bottom:12px;">Phone: '. $phone .'</h3><br>';
+               $bodyContent = '<h3 style="font-size:18px; margin-bottom:12px;">Name: '. $name .'</h3><br>';
+               $bodyContent .= '<h3 style="font-size:18px; margin-bottom:12px;">Email: '. $email .'</h3><br>';
+               $bodyContent .= '<h3 style="font-size:18px; margin-bottom:12px;">Phone: '. $phone .'</h3><br>';
 
-//                $mail->Subject = 'Lead - consultycs ';
-//                $mail->Body    = $bodyContent;
-//             //    $mail->send();
-//                if(!$mail->Send()) {
-//                     echo "Error while sending Email.";
-//                     var_dump($mail);
-//                 } else {
-//                     // echo "Email sent successfully";
-//                     header("Location: thanks.html");
-//                     // exit;
-//                 }
+               $mail->Subject = 'Lead - consultycs ';
+               $mail->Body    = $bodyContent;
+            //    $mail->send();
+               if(!$mail->Send()) {
+                    echo "Error while sending Email.";
+                    var_dump($mail);
+                } else {
+                    // echo "Email sent successfully";
+                    header("Location: thanks.html");
+                    // exit;
+                }
                 
-// 			}
-//     }
-// }
+			}
+    }
+}
 
 if($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['sendemail3'])){
     $phone = filter_var($_POST['phone'],FILTER_SANITIZE_NUMBER_INT);
